@@ -1,0 +1,41 @@
+.galeria {
+    background: #006241;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria__img {
+    width: 65%;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+
+.galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria__img {
+    width: 30%;
+    margin-top: 0;
+}
+
+}
+
+@media (min-width: 1024px) {
+    
+    .galeria__img {
+        width: 300px;
+        margin-top: 0;
+        margin-left: 25px;
+    }
+    
+    .galeria {
+        justify-content: center;
+    }
+}
